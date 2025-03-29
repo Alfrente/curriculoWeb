@@ -21,7 +21,7 @@
                     <img src="img/Icono_personal.jpg" alt="Icono personal" width="180" height="120">
                 </a>
              </h2>
-            <h2><a href="#Testimonios">TESRIMONIOS</a></h2>
+            <h2><a href="#Testimonios">TESTIMONIOS</a></h2>
             <h2><a href="#Informacion_usuario">CONTACTO</a></h2>
             <h2>                 
                 <a href="Tel:573226093031">
@@ -30,11 +30,19 @@
             </h2> 
         </div>        
     </header>
-  
+    <br>
     <main id="inicio">
-        <h1>Cada línea de código es un paso hacia la innovación</h1>
+        <div class="imagenFondo">
+            <img src="img/Fondo_inicial.jpg" alt="ss" height="360" width="500">
+            <div class="recuadro">            
+                <h1 style="padding: 10%; text-align: left;">Cada línea de código es un paso hacia la innovación</h1>
+                <div style="text-align: center; padding: auto;">
+                    <a href="#Informacion_usuario" >Contacto</a>
+                </div>
+            </div>
+        </div>
          <!-- esta parte va en un recuadro al lado derecho  JUGAR PARA QUE L PROXIMO APAREZCA AL OTRO LADO-->
-        <a href="#Informacion_usuario">Contacto</a>
+        
     
         <div>
             <h2>SOBRE MI</h2>
@@ -184,13 +192,66 @@
             </h4>
             
         </div>
-    <!--
-    poner un boton flotante con la opcion de whatsapp, corre y linkedin al lado derecho.    
-    -->
+        <!--
+        poner un boton flotante con la opcion de whatsapp, corre y linkedin al lado derecho.    
+        -->
     </main>
 
     <footer >
         <p> Copyright &copy; 2025 Todos los derechos reservados - Idelfonso Arroyo</p>
     </footer>
+
+    <style>
+        footer {
+            background-color: rgb(208, 238, 222);
+            color: rgb(0, 0, 0);
+            padding: 0px;
+            position: static;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+        header {
+            font: 1em sans-serif;
+            padding: 30px;
+            border: 1px;
+            padding: 0;
+           
+        }
+
+        .recuadro {
+            border: 2px solid #000; /* Grosor, estilo y color del borde */
+            padding: 1px;          /* Espacio interno */
+            background: #f0f0f0;    /* Color de fondo opcional */    
+            align-items: self-end;      
+            float: right; 
+                   
+        }
+
+        .encabezado {
+            color: rgb(0, 0, 0);
+            font-family: 'Courier New', Courier, monospace;
+            display: grid;
+            grid-template-columns: repeat(7, 1fr); /* 7 columnas iguales */
+            gap: 20px;
+            align-items: center;
+            padding: 0;
+            
+        }
+
+        .encabezado h2 {
+            margin: 0;
+            text-align: center; /* Centra texto en su columna */
+            color: black;
+            font: bold;
+            padding: 0;
+        }
+
+        .imagenFondo{
+            background-image: url(img/Fondo_inicial.jpg);
+        }
+
+        
+    </style>
 </body>
 </html>
