@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+<head>    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curriculo - Programador</title>
+    <title>Portafolio - Programador</title>
     <link rel="icon" type="image/png" href="img/Icono_pagina.png">
+    <link rel="stylesheet" type="text/css" href="css/index.css">    
 </head>
 <body>
     <!---
@@ -18,7 +19,7 @@
             <!-- Crear un icono profesional y ponerlo en el centro las opciones -->
              <h2>
                 <a href="#pricipio">
-                    <img src="img/Icono_personal.jpg" alt="Icono personal" width="180" height="120">
+                    <img src="img/Icono_personal.png" alt="Icono personal" width="180" height="120"> <!-- Difuminar la imagen en la casa para que no sobresalgan los lados y guardarlo en png-->
                 </a>
              </h2>
             <h2><a href="#Testimonios">TESTIMONIOS</a></h2>
@@ -32,38 +33,35 @@
     </header>
     <br>
     <main id="inicio">
-        <div class="imagenFondo">
-            <img src="img/Fondo_inicial.jpg" alt="ss" height="360" width="500">
+        <div class="imagenFondo">            
             <div class="recuadro">            
-                <h1 style="padding: 10%; text-align: left;">Cada línea de código es un paso hacia la innovación</h1>
-                <div style="text-align: center; padding: auto;">
-                    <a href="#Informacion_usuario" >Contacto</a>
+                <h1>Cada línea de código <br> es un paso hacia la innovación.</h1>                
+                <div>
+                    <a class="enlace-contacto" href="#Informacion_usuario" >Contacto</a>
                 </div>
             </div>
         </div>
          <!-- esta parte va en un recuadro al lado derecho  JUGAR PARA QUE L PROXIMO APAREZCA AL OTRO LADO-->
         
     
-        <div>
+        <div class="informacion_personal">
+            
             <h2>SOBRE MI</h2>
             <h3>
-                Me especializo en el desarrollo de servicios web apartir de las ideas que 
-                quieras materializar en un proyecto tecnologico. 
-                Comprendo la importancia de cumplir con el objetivo que tienes con el proyecto. 
+                Me especializo en el desarrollo de servicios web, donde trabajo para convertir tus ideas en proyectos tecnológicos exitosos. Comprendo la importancia de alcanzar los objetivos que tienes establecidos para tu proyecto.
             </h3>
             <a href="#Mas_informacion">mas informacion</a>            
         </div>
         <br>
-        <div>
+        <div class="gallery">
             <img src="img/Mensaje_progrmacion.jpg" width="520" height="320" alt="Mensaje sobre programacion">
             <h2>
                 "La programación no es magia: es el arte de dar instrucciones precisas y estructuradas 
                 para que una máquina, como una computadora, realice tareas útiles de manera eficiente."
             </h2>
         </div>
-        
-        <div class="gallery" id="Servicios">
-            <h2>SERVICIOS</h2>
+        <h2 class="centrar">SERVICIOS</h2>
+        <div class="gallery" id="Servicios">            
             <hr> <!-- PONER algun separado innovador incluso una imagen pequeña--> 
             <div class="item">
                 <img src="img/mantenimiento_computadora.png" width="420" height="320" alt="Mantenimiento de computadora 1">
@@ -94,12 +92,12 @@
             </div>            
         </div>
 
-        <div id="Testimonios">
-            <!-- Hcer un carrucel-->
-            <h2>Testimonios</h2>
+        <h2 class="centrar">Testimonios</h2>
+        <div class="carrusel" id="Testimonios">
+            <!-- Hcer un carrucel-->        
             <hr> <!-- PONER algun separado innovador incluso una imagen pequeña--> 
 
-            <div>
+            <div class="slide">
                 <img src="img/Opinio1.jpg" width="280" height="320" alt="">
                 <p>
                     "El desarrollo fue impecable: entregaron antes de lo pactado, 
@@ -108,17 +106,17 @@
                 </p>
                 <h5>Mateo García: Cliente satisfecho</h5>
             </div>
-            <div>
+            <div class="slide">
                 <img src="img/Opinio2.jpg" width="250" height="320" alt="">
-                <p>
+                <p class="descripcion">
                     "Aunque el diseño inicial fue prometedor, hubo retrasos en la fase de pruebas 
                     y falta de adaptación a cambios menores. Mejorarían con más flexibilidad."
                 </p>
                 <h5>Valeria López: Cliente insatisfecha</h5>
             </div>
-            <div>
+            <div class="slide">
                 <img src="img/Opinio3.jpg" width="250" height="320" alt="">
-                <p>
+                <p class="descripcion">
                     "Solucionaron problemas técnicos complejos con creatividad. 
                     El resultado final es escalable y fácil de mantener. Recomendamos su 
                     trabajo sin duda."
@@ -131,15 +129,27 @@
             <h2>INFORMACIÓN SOBRE IDELFONSO ARROYO H</h2>
             <hr> <!-- PONER algun separado innovador incluso una imagen pequeña-->                  
             <h3>
-                Futuro ingeniero en sistemas, tras ayudar a varios conocidos en el area de la tecnologia recibi varias 
-                recomendaciones para incurcionar en esa area permitiendome enamorarme de la tecnologia.
+                <!-- 
+                    Futuro ingeniero en sistemas, tras ayudar a varios conocidos en el area de la tecnologia recibi varias 
+                    recomendaciones para incurcionar en esa area permitiendome enamorarme de la tecnologia. 
 
-                Mi objetivo es ampliar mis habilidades para llegar a un público más amplio permitiendome brindar un catalogo 
-                amplio de servicios como mantenimiento de impresora y computadores y instalacion
-                de camaras de vigilancia.
+                    Mi objetivo es ampliar mis habilidades para llegar a un público más amplio permitiendome brindar un catalogo 
+                    amplio de servicios como mantenimiento de impresora y computadores y instalacion
+                    de camaras de vigilancia.
 
-                Estoy seguro de que mi compasión y mi capacidad para no dejar a media lo que ininicio
-                podremos terminar el proyecto.
+                    Estoy seguro de que mi compasión y mi capacidad para no dejar a media lo que ininicio
+                    podremos terminar el proyecto.
+                -->
+                
+                Soy un futuro ingeniero en sistemas. Después de ayudar a varios conocidos en el ámbito de la tecnología, <br>
+                recibí recomendaciones que me llevaron a incursionar en esta área, lo que me permitió enamorarme de la tecnología.<br> 
+
+                <br>Mi objetivo es ampliar mis habilidades para llegar a un público más amplio, <br>
+                ofreciendo un catálogo diverso de servicios que incluye mantenimiento de impresoras y computadoras, <br>
+                así como instalación de cámaras de vigilancia. <br>
+
+                <br>Estoy seguro de que mi compromiso y mi capacidad para no dejar inconcluso lo que inicio <br>
+                 nos permitirán completar cualquier proyecto con éxito. 
             </h3>
             <!-- crear una clase resaltar para reutilizarla en varias partes importantes-->
              <img src="img/Ilustracion_programacion.jpg" height="220" width="320" alt="Imagen relacionada con la programacion.">
@@ -200,58 +210,5 @@
     <footer >
         <p> Copyright &copy; 2025 Todos los derechos reservados - Idelfonso Arroyo</p>
     </footer>
-
-    <style>
-        footer {
-            background-color: rgb(208, 238, 222);
-            color: rgb(0, 0, 0);
-            padding: 0px;
-            position: static;
-            bottom: 0;
-            width: 100%;
-            text-align: center;
-        }
-        header {
-            font: 1em sans-serif;
-            padding: 30px;
-            border: 1px;
-            padding: 0;
-           
-        }
-
-        .recuadro {
-            border: 2px solid #000; /* Grosor, estilo y color del borde */
-            padding: 1px;          /* Espacio interno */
-            background: #f0f0f0;    /* Color de fondo opcional */    
-            align-items: self-end;      
-            float: right; 
-                   
-        }
-
-        .encabezado {
-            color: rgb(0, 0, 0);
-            font-family: 'Courier New', Courier, monospace;
-            display: grid;
-            grid-template-columns: repeat(7, 1fr); /* 7 columnas iguales */
-            gap: 20px;
-            align-items: center;
-            padding: 0;
-            
-        }
-
-        .encabezado h2 {
-            margin: 0;
-            text-align: center; /* Centra texto en su columna */
-            color: black;
-            font: bold;
-            padding: 0;
-        }
-
-        .imagenFondo{
-            background-image: url(img/Fondo_inicial.jpg);
-        }
-
-        
-    </style>
 </body>
 </html>

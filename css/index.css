@@ -1,0 +1,124 @@
+footer {
+    background-color: rgb(208, 238, 222);
+    color: rgb(0, 0, 0);
+    position: static;
+    width: 100%;
+    text-align: center;
+}
+
+.header {
+    font: 1em sans-serif;                                 
+}
+
+.encabezado {
+    font-family: 'Courier New', Courier, monospace;
+    display: grid; /*  */
+    grid-template-columns: repeat(7, 1fr); /* 7 columnas iguales */
+    align-items: center;
+    text-decoration: none; /* Elimina la línea subrayada de los enlaces */
+    background-image: url(../img/Icono_banner.jpg);            
+}
+
+.encabezado h2 {
+    margin: 0;
+    text-align: center; 
+    font: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.encabezado h2 a {
+    color: #000000; /* Cambia el color de los enlaces a azul */
+    text-decoration: none; /* Elimina la línea subrayada de los enlaces */            
+}
+        
+.imagenFondo{
+    background-image: url(../img/Fondo_inicial2.jpg);
+    
+    padding: 130px;
+    background-size: cover;
+            
+    display: flex;
+    justify-content: right;   
+}
+
+.recuadro {
+    background-color: #ffffff; /* Agrega un fondo semitransparente para mejorar la legibilidad */
+    padding: 120px 20px; /* Ajusta el padding según tus necesidades (validar porque en la imagen puedo contralar el tamaño)*/
+    text-align: center;            
+}
+
+.recuadro a {                  
+    text-align: left;            
+}
+
+.recuadro h1 {
+    text-align: center; /* Alinea el título a la izquierda */
+    color: rgb(0, 0, 0);                      
+}
+
+.enlace-contacto {
+    border: 2px solid rgb(0, 0, 0); /* Grosor del borde, estilo del borde y color del borde */
+    padding: 5px; /* Agrega espacio entre el texto y el borde */
+    text-decoration: none; /* Elimina la línea subrayada del enlace */
+    border-radius: 15px; /* Redondea las esquinas del borde */
+    color: rgb(0, 0, 0);    
+}
+
+/*
+    El media screen es para poner condiciones de acuerdo a las caracteristicas de la pantalla
+    @media screen and (max-width: 320px){
+        debo seleccionar lo que quero cambiar ejemplo: body{color: aqua;}
+    }
+*/
+
+body{
+    background-image: url(../img/Fondo.jpg);                      
+}
+
+.informacion_personal{
+    text-align: center;
+    border: 3px solid #000000;
+    padding: 9px;
+}
+
+.informacion_personal h2 {
+  
+    color: #000000;
+    text-align: center;
+}
+
+.informacion_personal h3 {
+    text-align: justify;                    
+}
+
+.informacion_personal a {            
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border: 2px solid #000000;
+    border-radius: 30px;
+    background-color: antiquewhite;
+    padding: 3px;            
+}
+
+.gallery{
+    display: flex;
+    border: 2px solid #000000;
+    text-align: center;
+}
+
+.gallery h2{
+    text-align: center;
+    color: #000000;
+}
+
+.centrar{
+    text-align: center;
+}
+
+.separador{
+    text-align: center;
+}
+        
+
+        
+   
