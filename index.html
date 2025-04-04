@@ -3,9 +3,9 @@
 <head>    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio - Programador</title>
+    <title>Portafolio</title>
     <link rel="icon" type="image/png" href="img/Icono_pagina.png">
-    <link rel="stylesheet" type="text/css" href="css/index.css">    
+    <link rel="stylesheet" href="css/index.css">    
 </head>
 <body>
     <!---
@@ -19,28 +19,28 @@
             <!-- Crear un icono profesional y ponerlo en el centro las opciones -->
              <h2>
                 <a href="#pricipio">
-                    <img src="img/Icono_personal.png" alt="Icono personal" width="180" height="120"> <!-- Difuminar la imagen en la casa para que no sobresalgan los lados y guardarlo en png-->
+                    <img src="img/Icono_personal.png" alt="Icono personal" width="280" height="130"> <!-- Difuminar la imagen en la casa para que no sobresalgan los lados y guardarlo en png-->
                 </a>
              </h2>
             <h2><a href="#Testimonios">TESTIMONIOS</a></h2>
             <h2><a href="#Informacion_usuario">CONTACTO</a></h2>
             <h2>                 
                 <a href="Tel:573226093031">
-                    <img src="img/Icono_telefono.jpg" alt="Icono del telefono" width="40" height="40">
+                    <img src="img/Icono_telefono.png" alt="Icono del telefono" width="25" height="25">
                 </a>
             </h2> 
         </div>        
     </header>
     <br>
     <main id="inicio">
-        <div class="imagenFondo">            
+        <section class="imagenFondo">            
             <div class="recuadro">            
                 <h1>Cada línea de código <br> es un paso hacia la innovación.</h1>                
                 <div>
                     <a class="enlace-contacto" href="#Informacion_usuario" >Contacto</a>
                 </div>
             </div>
-        </div>
+        </section>
          <!-- esta parte va en un recuadro al lado derecho  JUGAR PARA QUE L PROXIMO APAREZCA AL OTRO LADO-->
         
     
@@ -61,11 +61,11 @@
             </h2>
         </div>
         <h2 class="centrar">SERVICIOS</h2>
-        <div class="gallery" id="Servicios">            
+        <section class="gallery" id="Servicios">            
             <hr> <!-- PONER algun separado innovador incluso una imagen pequeña--> 
             <div class="item">
                 <img src="img/mantenimiento_computadora.png" width="420" height="320" alt="Mantenimiento de computadora 1">
-                <h3>Mantenimiento profesional</h3>
+                <h3>Mantenimiento</h3>
                 <p>                    
                     optimizaré su computadora con actualizaciones de software, limpieza de componentes 
                     y ajustes técnicos para garantizar un rendimiento fluido y prolongar su vida útil, 
@@ -90,44 +90,65 @@
                     garantizando operaciones fluidas y prolongando su vida útil de manera eficiente.
                 </p>
             </div>            
-        </div>
+        </section>
 
         <h2 class="centrar">Testimonios</h2>
-        <div class="separadorImg">
+        <span class="separadorImg" style="text-align: center;">
             <img src="img/separador.png"  alt="separador">    
-        </div>
+        </span>
         
-        <div class="carrusel" id="Testimonios">
+        <section class="gallery" id="Testimonios">
             <!-- Hcer un carrucel-->        
             <hr> <!-- PONER algun separado innovador incluso una imagen pequeña--> 
 
-            <div class="slide">
-                <img src="img/Opinio1.jpg" width="280" height="320" alt="">
-                <p>
+            <div class="gallery">
+                <img src="img/Opinio1.png" width="280" height="320" alt="">
+                <p>                    
+                    <br><br><br><br>
+                    <span class="ordenarEstrella">
+                       <img src="img/estrellas 5.png" alt="estrella" height="30" width="120">
+                    </span>
+                    <br>
                     "El desarrollo fue impecable: entregaron antes de lo pactado, 
                     con funcionalidades que superaron nuestras expectativas. 
                     La comunicación fue clara y el soporte postventa excepcional."
-                </p>
-                <h5>Mateo García: Cliente satisfecho</h5>
+
+                    <br><br>
+                    <span class="resaltado">Mateo García</span>: Cliente satisfecho
+                </p>                                
             </div>
-            <div class="slide">
-                <img src="img/Opinio2.jpg" width="250" height="320" alt="">
+            <div class="gallery">
+                <img src="img/Opinio2.png" width="250" height="320" alt="">
                 <p class="descripcion">
+                    <br><br><br><br>
+                    <span class="ordenarEstrella">
+                        <img src="img/estrellas 2.png" alt="estrella" height="30" width="120">
+                     </span>
+                     <br>
                     "Aunque el diseño inicial fue prometedor, hubo retrasos en la fase de pruebas 
                     y falta de adaptación a cambios menores. Mejorarían con más flexibilidad."
-                </p>
-                <h5>Valeria López: Cliente insatisfecha</h5>
+
+                    <br><br>
+                    <span class="resaltado">Valeria López</span>: Cliente insatisfecha
+                </p>                
             </div>
-            <div class="slide">
-                <img src="img/Opinio3.jpg" width="250" height="320" alt="">
+            <div class="gallery">
+                <img src="img/Opinio3.png" width="250" height="320" alt="">
                 <p class="descripcion">
+                    <br><br><br><br>
+                    <span class="ordenarEstrella">
+                        <img src="img/estrellas 4.png" alt="estrella" height="30" width="120">
+                     </span>
+                     <br>
                     "Solucionaron problemas técnicos complejos con creatividad. 
                     El resultado final es escalable y fácil de mantener. Recomendamos su 
                     trabajo sin duda."
-                </p>
-                <h5>Lucas Martínez: Cliente satisfecho</h5>
+
+                    <br><br>
+                    <cite class="resaltado">Lucas Martínez<cite>: Cliente satisfecho
+                </p>                
             </div>
-        </div>
+        </section>
 
         <div id="Mas_informacion">
             <h2>INFORMACIÓN SOBRE IDELFONSO ARROYO H</h2>
@@ -159,7 +180,7 @@
              <img src="img/Ilustracion_programacion.jpg" height="220" width="320" alt="Imagen relacionada con la programacion.">
         </div>
 
-        <div id="Informacion_usuario" >
+        <section class="informacion_contacto" id="Informacion_usuario" >
             <form action="">
                 <fieldset >
                     <h2>CONTACTO</h2>
@@ -178,33 +199,27 @@
                     alert("¡Formulario enviado correctamente!");
                     
                 });
-            </script>
-
-            <br><br>
-
-            <h4>Quibdó, Chocó, Colombia</h4>
+            </script>           
+        </section>
+        
+        <h4>Quibdó, Chocó, Colombia</h4>
+        <div class="ordenarEnlaces">
+            
             <h4>                 
                 <a href="Tel:573226093031"> 
-                    <img src="img/Icono_telefono.jpg" alt="Icono telefono" width="30" height="30"> +57 3226093031                   
+                    <img src="img/Icono_telefono.png" alt="Icono telefono" width="30" height="30">                    
                 </a>
             </h4> 
             <h4>                 
                 <a href="Mailto:arroyolokura8@gmail.com"> 
-                    <img src="img/Icono_correo.jpg" alt="Icono correo" width="30" height="30"> arroyolokura8@gmail.com                   
+                    <img src="img/Icono_correo.png" alt="Icono correo" width="30" height="30">                    
                 </a>
             </h4> 
-
             <h4>
-                <a href="www.linkedin.com/in/arroyo-kings" target="_blank">
-                    <img src="img/Icono_linkedin.jpg" alt="Icono de linkedin" width="28" height="28"> Idelfonso Arroyo Hernandez
+                <a  href="https://www.linkedin.com/in/arroyo-kings" target="_blank">
+                    <img src="img/Icono_linkedin.jpg" alt="Icono de linkedin" width="28" height="28"> 
                 </a>
-            </h4>
-
-            <h4>
-                <img src="img/Icono_reloj.jpg" alt="Icono reloj" width="30" height="30">
-                Lunes a viernes - 08:00-19:00.
-            </h4>
-            
+            </h4>           
         </div>
         <!--
         poner un boton flotante con la opcion de whatsapp, corre y linkedin al lado derecho.    
@@ -214,5 +229,7 @@
     <footer >
         <p> Copyright &copy; 2025 Todos los derechos reservados - Idelfonso Arroyo</p>
     </footer>
+
+    
 </body>
 </html>

@@ -1,125 +1,186 @@
-footer {
-    background-color: rgb(208, 238, 222);
-    color: rgb(0, 0, 0);
+:root {
+    --color-principal: rgb(208, 238, 222);
+    --color-secundario: #000;
+    --font-principal: 'Courier New', Courier, monospace;
+    --font-secundaria: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  footer {
     position: static;
     width: 100%;
     text-align: center;
-}
-
-.header {
-    font: 1em sans-serif;                                 
-}
-
-.encabezado {
+    background-color: var(--color-principal);
+    color: var(--color-secundario);
+  }
+  
+  .header {
+    font: 1em sans-serif;
+  }
+  
+  .encabezado {
     font-family: 'Courier New', Courier, monospace;
-    display: grid; /*  */
-    grid-template-columns: repeat(7, 1fr); /* 7 columnas iguales */
+    display: grid;
+    /* */
+    grid-template-columns: repeat(7, 1fr);
+    /* 7 columnas iguales */
     align-items: center;
-    text-decoration: none; /* Elimina la línea subrayada de los enlaces */
-    background-image: url(../img/Icono_banner.jpg);            
-}
-
-.encabezado h2 {
+    text-decoration: none;
+    /* Elimina la línea subrayada de los enlaces */
+    background-image: url(../img/Icono_banner.jpg);
+  }
+  
+  .encabezado h2 {
     margin: 0;
-    text-align: center; 
+    text-align: center;
     font: bold;
     font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.encabezado h2 a {
-    color: #000000; /* Cambia el color de los enlaces a azul */
-    text-decoration: none; /* Elimina la línea subrayada de los enlaces */            
-}
-        
-.imagenFondo{
+  }
+  
+  .encabezado logoCent h1 a img {
+    width: "280";
+    height: "130";
+  }
+  
+  .encabezado h2 a {
+    color: #000000;
+    /* Cambia el color de los enlaces a azul */
+    text-decoration: none;
+    /* Elimina la línea subrayada de los enlaces */
+    font-size: 15px;
+  }
+  
+  .imagenFondo {
     background-image: url(../img/Fondo_inicial2.jpg);
-    
     padding: 130px;
     background-size: cover;
-            
     display: flex;
-    justify-content: right;   
-}
-
-.recuadro {
-    background-color: #ffffff; /* Agrega un fondo semitransparente para mejorar la legibilidad */
-    padding: 120px 20px; /* Ajusta el padding según tus necesidades (validar porque en la imagen puedo contralar el tamaño)*/
-    text-align: center;            
-}
-
-.recuadro a {                  
-    text-align: left;            
-}
-
-.recuadro h1 {
-    text-align: center; /* Alinea el título a la izquierda */
-    color: rgb(0, 0, 0);                      
-}
-
-.enlace-contacto {
-    border: 2px solid rgb(0, 0, 0); /* Grosor del borde, estilo del borde y color del borde */
-    padding: 5px; /* Agrega espacio entre el texto y el borde */
-    text-decoration: none; /* Elimina la línea subrayada del enlace */
-    border-radius: 15px; /* Redondea las esquinas del borde */
-    color: rgb(0, 0, 0);    
-}
-
-/*
-    El media screen es para poner condiciones de acuerdo a las caracteristicas de la pantalla
-    @media screen and (max-width: 320px){
-        debo seleccionar lo que quero cambiar ejemplo: body{color: aqua;}
-    }
-*/
-
-body{
-    background-image: url(../img/Fondo.jpg);                      
-}
-
-.informacion_personal{
+    justify-content: right;
+  }
+  
+  .recuadro {
+    background-color: #ffffff;
+    /* Agrega un fondo semitransparente para mejorar la legibilidad */
+    padding: 120px 20px;
+    /* Ajusta el padding según tus necesidades (validar porque en la imagen puedo contralar el tamaño)*/
+    text-align: center;
+  }
+  
+  .recuadro a {
+    text-align: left;
+  }
+  
+  .recuadro h1 {
+    text-align: center;
+    /* Alinea el título a la izquierda */
+    color: rgb(0, 0, 0);
+  }
+  
+  .enlace-contacto {
+    border: 2px solid rgb(0, 0, 0);
+    /* Grosor del borde, estilo del borde y color del borde */
+    padding: 5px;
+    /* Agrega espacio entre el texto y el borde */
+    text-decoration: none;
+    /* Elimina la línea subrayada del enlace */
+    border-radius: 15px;
+    /* Redondea las esquinas del borde */
+    color: rgb(0, 0, 0);
+  }
+  
+  /*
+  El media screen es para poner condiciones de acuerdo a las caracteristicas de la pantalla
+  @media screen and (max-width: 320px){
+  debo seleccionar lo que quero cambiar ejemplo: body{color: aqua;}
+  */
+  
+  body {
+    background-image: url(../img/Fondo.jpg);
+  }
+  
+  .informacion_personal {
     text-align: center;
     border: 3px solid #000000;
     padding: 9px;
-}
-
-.informacion_personal h2 {
+  }
   
+  .informacion_personal h2 {
     color: #000000;
     text-align: center;
-}
-
-.informacion_personal h3 {
-    text-align: justify;                    
-}
-
-.informacion_personal a {            
+  }
+  
+  .informacion_personal h3 {
+    text-align: justify;
+  }
+  
+  .informacion_personal a {
     color: rgb(0, 0, 0);
     text-decoration: none;
     border: 2px solid #000000;
     border-radius: 30px;
     background-color: antiquewhite;
-    padding: 3px;            
-}
-
-.gallery{
+    padding: 3px;
+  }
+  
+  .gallery {
     display: flex;
     border: 2px solid #000000;
-    text-align: center;
-}
-
-.gallery h2{
+    flex-direction: row;
+  }
+  
+  .gallery h2 {
     text-align: center;
     color: #000000;
-}
-
-.centrar{
+  }
+  
+  .centrar {
     text-align: center;
-}
-
-.separadorImg{
+  }
+  
+  .separadorImg {
     text-align: center;
-    padding: 0%;
-    gap: 0;
-}
-        
+  }
+  
+  .resaltado {
+    font-weight: bold;
+    /* Negrita */
+    color: #000;
+    /* Color del texto */
+    padding: 2px 4px;
+    /* Espaciado alrededor del texto */
+    border-radius: 4px;
+    /* Bordes redondeados */
+  }
+  
+  .ordenarEnlaces {
+    display: inline-flex;
+    text-align: center;
+    justify-content: center;
+    
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
 
-   
+  .ordenarEnlaces img {
+    width: 30px;
+    height: 30px;
+}
+  
+  .ordenarEnlaces a {
+    padding: 30px;    
+  }
+  
+  .informacion_contacto {
+    display: inline-block;
+    flex-direction: row;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .informacion_contacto input {
+    width: 20%;
+  }
+  
